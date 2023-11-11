@@ -10,4 +10,8 @@ app.get("/", (req, res) => {
   res.sendFile(__dirname + "/views/index.html");
 });
 
+app.get("/miverdejardin", (req, res) => {
+  res.sendFile(__dirname + "/views/jardin.html");
+});
+
 app.listen(PORT, () => console.log("Server funcionando en puerto " + PORT));
